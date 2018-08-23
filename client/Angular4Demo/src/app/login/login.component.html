@@ -1,0 +1,34 @@
+<section id="loginPage">
+  <div class="container p-5">
+    <div class="row mt-5">
+      <div class="col-lg-4 offset-lg-4">
+        <app-message></app-message>
+        <div class="card bg-light">
+          <div class="card-body">
+            <h4 class="text-center">Login</h4>
+            <hr>
+            <form class="form-body" [formGroup]="loginForm" (ngSubmit)="_onSubmit()">
+              <div class="form-group">
+                <label for="loginEmail" class="form-control-label">Email</label>
+                <input id="loginEmail" type="email" placeholder="email" class="form-control" formControlName="email">
+                <control-messages [control]="loginForm.get('email')" [submitted]="submitted">
+                </control-messages>
+              </div>
+              <div class="form-group">
+                <label for="loginPassword" class="form-control-label">Password</label>
+                <input id="loginPassword" type="password" placeholder="password" class="form-control" formControlName="password">
+                <control-messages [control]="loginForm.get('password')" [submitted]="submitted">
+                </control-messages>
+              </div>
+              <hr>
+              <button type="submit" class="btn btn-primary btn-block" [disabled]="btnDisabled">login</button>
+            </form>
+          </div>
+          <a style="text-align: center;
+          margin: 10px 0;
+          color: #007bff;" (click)="gotoRegister()">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

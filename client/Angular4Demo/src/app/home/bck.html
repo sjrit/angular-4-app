@@ -1,0 +1,116 @@
+<div class="container">
+        <div class="heading col-md-12 col-xs-12">
+            <div class="head-1">
+                <span>Freedom To Make</span>
+                <span class="text_bold" md-colors="{'color': 'primary'}" style="color: rgb(68, 200, 245);">The Right Pick</span>
+            </div>
+            <div class="head-2">
+                <span>A myHQ pass is unlike any other coworking membership.Break free the right way. Find freedom to make your pick:
+                    coworking spaces or work cafes.</span>
+            </div>
+        </div>
+        <div class="inner-container">
+            <div class="left-container col-md-4 col-xs-12">
+                <div layout="row" md-colors="{'background': 'primary-900'}" class="steps_heading layout-wrap layout-row" layout-wrap="" style="background: rgb(0, 50, 68); color: rgba(255, 255, 255, 0.87);">
+                    <div flex="grow" md-colors="{'color': 'primary-100'}" class="Your-myHQ flex-grow" style="color: rgb(255, 255, 255);">
+                        <span>With your </span>
+                        <span class="text_bold" md-colors="{'color': 'primary'}" style="color: rgb(68, 200, 245);">myHQ Pass</span>
+                    </div>
+                    <div flex="grow"  md-colors="{'color': 'primary-100'}" class="Your-myHQdetail  flex-grow" style="color: rgb(255, 255, 255);">find the freedom to</div>
+                </div>
+                <div layout="row" class="steps_points  layout-wrap show-gt-sm layout-align-gt-sm-center-center layout-row" md-colors="{'background': 'primary-100'}"
+                    layout-align-gt-sm="center center" layout-wrap="" style="background: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.87);">
+                    <!---->
+                    <div layout="column" flex="90" class="layout-column flex-90">
+                        <div layout="row" class="steps_points__features layout-row">
+                            <div layout="column" flex="20" layout-align="center center" class="layout-align-center-center layout-column flex-20">
+                                <img src="https://res.cloudinary.com/myhq/image/upload/v1524290770/home/office-space-location-icon.png" class="l-imageFitContain"
+                                    alt="myHQ coworrking space visit" src="https://res.cloudinary.com/myhq/image/upload/v1524290770/home/office-space-location-icon.png">
+                            </div>
+                            <div layout="column" class="font-size-14px steps_points__col layout-column flex-80" flex="80">Access a new space in every locality, everyday</div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div layout="column" flex="90" class="layout-column flex-90">
+                        <div layout="row" class="steps_points__features layout-row">
+                            <div layout="column" flex="20" layout-align="center center" class="layout-align-center-center layout-column flex-20">
+                                <img src="https://res.cloudinary.com/myhq/image/upload/v1524290768/home/coworking-subscription-icon.png" class="l-imageFitContain"
+                                    alt="myHQ coworrking space visit" src="https://res.cloudinary.com/myhq/image/upload/v1524290768/home/coworking-subscription-icon.png">
+                            </div>
+                            <div layout="column" class="font-size-14px steps_points__col layout-column flex-80" flex="80">Use your subscription fee to fulfill your food expenses with our free credits</div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div layout="column" flex="90" class="layout-column flex-90">
+                        <div layout="row" class="steps_points__features layout-row">
+                            <div layout="column" flex="20" layout-align="center center" class="layout-align-center-center layout-column flex-20">
+                                <img src="https://res.cloudinary.com/myhq/image/upload/v1524290770/home/office-space-no-expiry-coworking.png" class="l-imageFitContain"
+                                    alt="myHQ coworrking space visit" src="https://res.cloudinary.com/myhq/image/upload/v1524290770/home/office-space-no-expiry-coworking.png">
+                            </div>
+                            <div layout="column" class="font-size-14px steps_points__col layout-column flex-80" flex="80">Use your subscription fee to pay for coworking space cover charges</div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div layout="column" flex="90" class="layout-column flex-90">
+                        <div layout="row" class="steps_points__features layout-row">
+                            <div layout="column" flex="20" layout-align="center center" class="layout-align-center-center layout-column flex-20">
+                                <img src="https://res.cloudinary.com/myhq/image/upload/v1524290770/home/noexpiry-office-space-icon.png" class="l-imageFitContain"
+                                    alt="myHQ coworrking space visit" src="https://res.cloudinary.com/myhq/image/upload/v1524290770/home/noexpiry-office-space-icon.png">
+                            </div>
+                            <div layout="column" class="font-size-14px steps_points__col layout-column flex-80" flex="80">Redeem your myHQ credits any time. No expiry</div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+                <div flex="10"  show-gt-sm="" layout="row" layout-align="center end" class="pricing_link  show-gt-sm layout-align-center-end layout-row flex-10">
+                    <a class="spacesFeature__pricingButton md-button md-ink-ripple" md-colors="{'background': 'primary'}" style="background: rgb(68, 200, 245); color: rgba(255, 255, 255, 0.87);">EXPLORE PRICING</a>
+                </div>
+            </div>
+            <div class="right-container col-md-8 col-xs-12">
+                <div (click)="movePrev()" class="l-text">
+                    <a>Work Cafe
+                        <div *ngIf="currentSlide == 1" style="background: #44c8f5 !important;
+                                    height: 3px;
+                                    width: 10px;
+                                    position: relative;
+                                    margin: 0 auto;"></div>
+                    </a>
+                </div>
+                <div (click)="moveNext()" class="r-text">
+                    <a>coworking
+                        <div *ngIf="currentSlide == 2" style="background: #44c8f5 !important;
+                                height: 3px;
+                                width: 10px;
+                                position: relative;
+                                margin: 0 auto;"></div>
+                    </a>
+                </div>
+                <ks-swiper-container [options]="example1SwipeOptions">
+                    <ks-swiper-slide>
+                        <img src="https://res.cloudinary.com/myhq/image/upload/v1524290773/home/workcafe-icon.jpg">
+                    </ks-swiper-slide>
+                    <ks-swiper-slide>
+                        <img src="https://res.cloudinary.com/myhq/image/upload/v1524290773/home/workcafe-icon.jpg">
+                    </ks-swiper-slide>
+                </ks-swiper-container>
+                <div class="move-arrow">
+                    <i (click)="movePrev()" class="fa fa-chevron-left"></i>
+                    <i (click)="moveNext()" class="fa fa-chevron-right"></i>
+                </div>
+                <div class="bottom-text-myhq">
+                    <div class="c-comparisonHome__overflowText" md-colors="{'color': 'primary-100'}" style="color: rgb(255, 255, 255);">
+                        <!---->
+                        <div class="c-comparisonHome__textRepeat" ng-repeat="text in data.textArray">
+                            <i md-colors="{'color': 'primary'}" class="fa fa-star" style="color: rgb(68, 200, 245);"></i> Guaranteed high speed wifi and plug points at all seats</div>
+                        <!---->
+                        <div class="c-comparisonHome__textRepeat" ng-repeat="text in data.textArray">
+                            <i md-colors="{'color': 'primary'}" class="fa fa-star" style="color: rgb(68, 200, 245);"></i> Seperate noise-free areas for a hassle free experience</div>
+                        <!---->
+                        <div class="c-comparisonHome__textRepeat" ng-repeat="text in data.textArray">
+                            <i md-colors="{'color': 'primary'}" class="fa fa-star" style="color: rgb(68, 200, 245);"></i> 15%+ discount on food and free beverages</div>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
