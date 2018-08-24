@@ -1,0 +1,89 @@
+.login-page {
+  height: 100vh;
+  background: #e8e8e8;
+  overflow: hidden;
+  background-image: url('/assets/img/l-bg.png');
+}
+.container {
+    position: absolute;
+    margin: auto;
+    max-width: 900px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 70vh;
+    background-color: #ffffff;
+}
+.left-container{
+    padding: 60px 40px;
+    .form--heading{
+        font-size: 15px;
+        width: 65%;
+        line-height: 26px;
+        color: rgb(106,106,106);
+        p{
+            margin: 12px 0;
+        }
+    }
+    form{
+        .form-group{
+            position : relative;
+            
+            input {
+                &:focus {
+                    &~label {
+                        top: 8px;
+                        bottom: 10px;
+                        left: 20px;
+                        font-size: 11px;
+                        opacity: 1;
+                    }
+                }
+                &:not(:focus) {
+                    &:valid {
+                        &~label {
+                            top: 8px;
+                            bottom: 10px;
+                            left: 20px;
+                            font-size: 11px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            label {
+                position: absolute;
+                pointer-events: none;
+                left: 20px;
+                top: 18px;
+                transition: 0.2s ease all;
+            }
+
+        }
+
+    }
+}
+.right-container{
+    position: relative;
+    background-image: url(/assets/img/3748.png);
+    background-position: -110px 0;
+    background-size: cover;
+    .c-btn-wrapper{
+        position: relative;
+        button{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: transparent;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+    }
+
+}
+
+.row{
+    height: 100%;
+}
+
